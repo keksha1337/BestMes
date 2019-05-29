@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/user_fragment_username_tv"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:textColor="@color/lightSage"
+        android:textSize="@dimen/text_size_26"
+        tools:text="UserName" />
+
+    <ImageView
+        android:id="@+id/user_fragment_edit_button"
+        android:layout_width="40dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_edit_black_24dp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/user_fragment_photo_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/user_fragment_phone_tv"
+        android:layout_below="@id/user_fragment_username_tv"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/user_fragment_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@id/user_fragment_user_id_tv"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="16dp"
+        android:enabled="false"
+        android:textColor="@color/lightSage"
+        android:textSize="@dimen/text_size_20"
+        tools:text="phoneNumber" />
+
+    <EditText
+        android:id="@+id/user_fragment_user_id_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="20dp"
+        android:enabled="false"
+        android:textColor="@color/lightSage"
+        android:textSize="@dimen/text_size_20"
+        tools:text="userId" />
+
+</RelativeLayout>

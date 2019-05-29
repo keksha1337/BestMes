@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scan_result_item_rl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.vaskov.coursework.messenger.ui.main.DialogView
+        android:id="@+id/dialog_item_srv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

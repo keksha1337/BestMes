@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/fragment_dialog_detail_main_layout_rl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparencyBlack"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialog_detail_user_data_rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/transparencyBlack">
+
+        <ImageView
+            android:id="@+id/dialog_detail_photo_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/dialog_detail_username_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toEndOf="@id/dialog_detail_photo_iv"
+            android:textColor="@color/paleGrey"
+            android:textSize="@dimen/text_size_17" />
+
+        <TextView
+            android:id="@+id/dialog_detail_last_seen_tv"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/dialog_detail_username_tv"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/dialog_detail_photo_iv"
+            android:textColor="@color/paleGrey"
+            android:textSize="@dimen/text_size_14" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/dialog_detail_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_detail_user_data_rl"
+        android:layout_marginBottom="75dp">
+
+        <LinearLayout
+            android:id="@+id/dialog_detail_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/message_text_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/message_edit_text" />
+
+        <ImageView
+            android:id="@+id/send_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/ic_arrow_forward_black_24dp" />
+    </RelativeLayout>
+</RelativeLayout>
